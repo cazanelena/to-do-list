@@ -1,4 +1,6 @@
 import { addNewTask } from "./add_new_task.js";
 
 
-addNewTask()
+const submitBtn = document.getElementById("submitBtn")
+
+submitBtn.addEventListener("click", addNewTask)

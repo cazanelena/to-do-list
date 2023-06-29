@@ -1,10 +1,16 @@
 export function addNewTask() {
-    const toDoItem = document.querySelector("form");
+    const li = document.createElement("li")
+    
+    const taskUserValue = document.getElementById("userInput").value
+    const task = document.createTextNode(taskUserValue)
 
-    toDoItem.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const toDoList = {};
-    const newItem = document.querySelector("input").value;
-    toDoItem.append(newItem);
-});
+    li.appendChild(task);
+    if (taskUserValue === "") {
+        alert("You must enter a task!")
+    } else {
+        document.getElementById("listWithTasks").appendChild(li)
+    }
+    document.getElementById("userInput").value = ""
+    
+   
 }

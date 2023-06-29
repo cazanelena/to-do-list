@@ -7,14 +7,16 @@
     <title>To-do List</title>
 </head>
 <body>
-    <form>
-        <label for="newTask">New task</label>
-        <input type="text" id="newTask" name="newTask">
-        <button type="submit">Add</button>
-    </form>
-    <section>
-        <p id="to-do-list"></p>
-    </section>
+    <h1>To do list</h1>
+    <input type="text" placeholder="Add a task" id="userInput">
+    <button type="submit" id="submitBtn">Add</button>
+
+    <u id="listWithTasks">
+
+    </ul>
+    
+
+    
     <script src="./tests/test-helpers.js"></script>
     <script  type="module" src="./JavaScript/main.js"></script>
     <script src="./tests/add_new_task_test.js"></script>
