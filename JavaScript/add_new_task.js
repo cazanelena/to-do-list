@@ -12,6 +12,5 @@ export function addNewTask() {
     }
     document.getElementById("userInput").value = ""
     
-    console.log(taskUserValue)
-
+   
 }
