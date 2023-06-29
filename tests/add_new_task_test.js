@@ -1,9 +1,10 @@
 import { addNewTask } from "../JavaScript/add_new_task.js";
 test("Submitting a new task adds it to the list", () => {
     // create task
-    let taskInput = document.getElementById("userInput").value;
-    taskInput = "Task test";
+    document.getElementById("userInput").value = "Task test"
     // submit task
     addNewTask();
-    equal(taskInput, "Task test");
+    const list = document.getElementById("listWithTasks");
+    console.log(list)
+    equal(list.children[0].textContent, "Task test");
 })
