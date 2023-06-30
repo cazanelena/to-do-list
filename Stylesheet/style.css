@@ -6,13 +6,19 @@
   /* border: 1px solid green; */
 }
 
-
 /* Remove margins and padding from the list */
 ul {
-  margin: 0;
+  margin-right: 25%;
+  margin-left: 25%;
   padding: 0;
+  list-style: none;
 }
-
+h1 {
+  text-align: center;
+}
+.search-section {
+  margin-left: 25%;
+}
 /* Style the list items */
 ul li {
   cursor: pointer;
@@ -36,7 +42,7 @@ ul li:nth-child(odd) {
 
 /* Darker background-color on hover */
 ul li:hover {
-  background: #ddd;
+  background: #a68b8b;
 }
 
 /* When clicked on, add a background color and strike out text */
