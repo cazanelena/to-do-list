@@ -1,3 +1,4 @@
+import { addDeleteButton } from "./add_delete_button.js";
 export function addNewTask() {
     const li = document.createElement("li")
     
@@ -12,5 +13,5 @@ export function addNewTask() {
     }
     document.getElementById("userInput").value = ""
     
-   
+    addDeleteButton();
 }
