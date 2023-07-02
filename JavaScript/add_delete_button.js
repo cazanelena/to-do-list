@@ -9,10 +9,10 @@ export function addDeleteButton() {
         span.className = "delete";
         span.appendChild(txt);
         myNodelist[i].appendChild(span);
-
-
     }
-    const deleteButton = document.querySelector(".delete");
-    // console.log(deleteButton);
-    deleteButton.addEventListener('click', deleteTask);
+    // delete function
+    const deleteButtons = document.querySelectorAll(".delete");
+    // console.log(deleteButtons);
+    // console.log(deleteButtons[i]);
+    deleteButtons.forEach(deleteButton => deleteButton.addEventListener('click', deleteTask));
 }
