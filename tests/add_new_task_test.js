@@ -5,6 +5,7 @@ test("Submitting a new task adds it to the list", () => {
     // submit task
     addNewTask();
     const list = document.getElementById("listWithTasks");
-    console.log(list)
-    equal(list.children[0].textContent, "Task test");
+    // console.log(list)
+    equal(list.children[0].textContent, "Task test\u00D7");
+    list.removeChild(list.children[0]);
 })
