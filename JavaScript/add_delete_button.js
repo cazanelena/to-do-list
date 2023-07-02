@@ -13,6 +13,6 @@ export function addDeleteButton() {
 
     }
     const deleteButton = document.querySelector(".delete");
-    console.log(deleteButton);
+    // console.log(deleteButton);
     deleteButton.addEventListener('click', deleteTask);
 }
