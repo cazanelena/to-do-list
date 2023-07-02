@@ -2,7 +2,6 @@ import { addNewTask } from "./add_new_task.js";
 
 import { add_checked } from "./checked_task.js";
 
-import { deleteTask } from "./delete_task.js";
 
 export let allTasksTracker = [];
 
