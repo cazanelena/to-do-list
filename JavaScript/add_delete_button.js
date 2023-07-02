@@ -9,7 +9,6 @@ export function addDeleteButton() {
         span.className = "delete";
         span.appendChild(txt);
         myNodelist[i].appendChild(span);
-
     }
     // delete function
     const deleteButtons = document.querySelectorAll(".delete");
