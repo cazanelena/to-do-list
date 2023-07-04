@@ -7,6 +7,6 @@ export function add_checked() {
         if (event.target.tagName === 'LI') {
             event.target.classList.toggle('checked');
         }
-        console.log(event.target.tagName)
+        // console.log(event.target.tagName)
     }, false);
 }
