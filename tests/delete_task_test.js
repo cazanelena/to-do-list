@@ -12,6 +12,9 @@ test("Deleting an entry removes it from the list", () => {
     const deleteButton = document.querySelector(".delete");
     deleteButton.addEventListener('click', deleteTask);
     deleteButton.click();
-    // console.log(list)
-    equal(list.children[0]?.textContent, undefined);
+
+    // check if the list has any 'li' elements if not the length should be zero
+    const liElements = list.querySelectorAll('li')
+
+    equal(liElements.length, 0);
 })
