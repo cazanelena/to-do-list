@@ -1,12 +1,20 @@
 import { add_checked } from "../JavaScript/checked_task.js";
 
 test("Verify the 'checked' class is aded when clicking on a task", () => {
-    const list = document.querySelector('ul');
-    for (let task in list) {
-        console.log(task)
-    }
-})
+    const tasks = document.querySelectorAll("li")
+    console.log(tasks)
 
-test("Verify the 'checked' class is removed once added when clicking on a task", () => {
+    if (tasks.length == 0) {
+        console.log('length zero')
+    } else {
+        for (let i = 0; i < tasks.length; i++){
+            console.log(tasks[i])
+        }
+    }
+   
+
+   
+   
     
 })
+
