@@ -13,7 +13,6 @@ document.addEventListener('keydown', function(event) {
         addNewTask()
     }
 })
-// Add a checked symbol to a task when clicked
 
 add_checked()
 
