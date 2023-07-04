@@ -10,5 +10,6 @@ const submitBtn = document.getElementById("submitBtn")
 submitBtn.addEventListener("click", addNewTask)
 
 // Add a checked symbol to a task when clicked
+
 add_checked()
 

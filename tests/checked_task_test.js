@@ -1,20 +1,20 @@
-import { add_checked } from "../JavaScript/checked_task.js";
+import { addNewTask } from "../JavaScript/add_new_task.js";
 
 test("Verify the 'checked' class is aded when clicking on a task", () => {
-    const tasks = document.querySelectorAll("li")
-    console.log(tasks)
+   // create task
+   document.getElementById("userInput").value = "Task test"
+   // submit task
+   addNewTask();
 
-    if (tasks.length == 0) {
-        console.log('length zero')
-    } else {
-        for (let i = 0; i < tasks.length; i++){
-            console.log(tasks[i])
-        }
-    }
+   const list = document.getElementById("listWithTasks");
+   const firstElemList = list.firstElementChild;
    
+   firstElemList.click()
+   
+   const hasClass = firstElemList.classList.contains('checked')
+   
+   equal(hasClass, true)
+   list.removeChild(list.children[0]);
 
-   
-   
-    
 })
 
