@@ -1,3 +1,14 @@
+:root {
+  --white-text: #ffffff;
+  --black-text: #000000;
+  --background-1: #e2d9e1;
+  --background-2: #f9f9f9;
+  --hover-background: #e2d1ed;
+  --checked-background: rgb(128, 112, 137);
+  --delete-background-hover: #000000;
+  --button-background: #ffffff;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap');
 *,
 *::before,
@@ -28,7 +39,7 @@ h1 {
   margin-bottom: 5rem;
   font-family: 'Belanosima', sans-serif;
   font-size: 3rem;
-  color: black;
+  color: var(--black-text);
 
 }
 .search-section {
@@ -41,15 +52,21 @@ h1 {
 #userInput {
   width: 100%;
   height: 3rem;
-  
-  
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 }
 
 #submitBtn {
   cursor: pointer;
   width: 5rem;
   margin-left: 0.3rem;
-  border-radius: 5px;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  background-color: var(--button-background);
 }
 
 /* Style the list items */
@@ -57,9 +74,11 @@ ul li {
   cursor: pointer;
   position: relative;
   padding: 12px 8px 12px 40px;
-  background: #eee;
+  background: var(--background-1);
   font-size: 18px;
   transition: 0.2s;
+  border-radius: 0.25rem;
+  margin-bottom: 0.4rem;
 
   /* make the list items unselectable */
   -webkit-user-select: none;
@@ -70,18 +89,18 @@ ul li {
 
 /* Set all odd list items to a different color (zebra-stripes) */
 ul li:nth-child(odd) {
-  background: #f9f9f9;
+  background: var(--background-2);
 }
 
 /* Darker background-color on hover */
 ul li:hover {
-  background: #a68b8b;
+  background: var(--hover-background);
 }
 
 /* When clicked on, add a background color and strike out text */
 ul li.checked {
-  background: #888;
-  color: #fff;
+  background: var(--checked-background);
+  color: var(--white-text);
   text-decoration: line-through;
 }
 
@@ -89,7 +108,7 @@ ul li.checked {
 ul li.checked::before {
   content: '';
   position: absolute;
-  border-color: #fff;
+  /* border-color: #fff; */
   border-style: solid;
   border-width: 0 2px 2px 0;
   top: 10px;
@@ -108,6 +127,6 @@ ul li.checked::before {
 }
 
 .delete:hover {
-  background-color: #f44336;
-  color: white;
+  background-color: var(--delete-background-hover);
+  color: var(--white-text);
 }
