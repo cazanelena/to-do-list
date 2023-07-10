@@ -1,11 +1,12 @@
 :root {
   --white-text: #ffffff;
-  --black-text: black;
-  --background-1: #eee;
+  --black-text: #000000;
+  --background-1: #e2d9e1;
   --background-2: #f9f9f9;
-  --hover-background: #a68b8b;
-  --checked-background: #888;
+  --hover-background: #e2d1ed;
+  --checked-background: rgb(128, 112, 137);
   --delete-background-hover: #000000;
+  --button-background: #ffffff;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap');
@@ -65,6 +66,7 @@ h1 {
   border: none;
   outline: none;
   padding: 0.5rem;
+  background-color: var(--button-background);
 }
 
 /* Style the list items */
