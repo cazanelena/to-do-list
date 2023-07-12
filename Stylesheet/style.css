@@ -18,7 +18,7 @@
   /* border: 1px solid green; */
 }
 body {
-  background-image: url("/Images/premium_photo-1683309563562-aa3cfde9ed10.avif");
+  background-image: url("/Images/brandi-redd-aJTiW00qqtI-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -30,18 +30,17 @@ ul {
   margin-left: 25%;
   padding: 0;
   list-style: none;
-
-  
 }
+
 h1 {
   text-align: center;
-  margin-top: 24rem;
+  margin-top: 12rem;
   margin-bottom: 5rem;
   font-family: 'Belanosima', sans-serif;
-  font-size: 3rem;
-  color: var(--black-text);
-
+  font-size: 4rem;
+  color: var(--white-text)
 }
+
 .search-section {
   margin-right: 25%;
   margin-left: 25%;
